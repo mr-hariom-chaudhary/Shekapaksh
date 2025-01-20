@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shetkari Kamgar Paksh Adai Newali</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(82, 1, 1);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .logo-container img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 3px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: yellow;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: red;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                width: 200px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+                padding: 10px;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        /* No changes for desktop */
+        @media (min-width: 769px) {
+            nav ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+        }
+
+        .main-content {
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .main-content img {
+            width: 1000px;
+            height: 700px;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: yellow;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const navList = document.querySelector("nav ul");
+            navList.classList.toggle("show");
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+            <a href="#" class="logo">शेतकरी कामगार पक्ष आदई - नेवाळी</a>
+        </div>
+    
+    </nav>
+
+    <div class="main-content">
+        <img src="7777.png" alt="8888">
+    </div>
+
+    <section id="achievements">
+        <h2>शेतकरी कामगार पक्ष कार्य</h2>
+        <img src="omkar9.png" height="700px" width="1200px" alt="omkar9">
+        <img src="254.png" height="600px" width="1300px" alt="254">
+        <img src="256.png" height="600px" width="1300px>
+        <img src="123.png" height="600px" width="1300px">
+        <img src="ui.png" height="900px" width="1300px" alt="ui">
+        <img src="999.jpg" height="700px" width="1000px" alt="999">
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: shetkarikamgarpakshadainewali@gmail.com</p>
+        <p>Phone: +91 9920454441</p>
+    </section>
+</body>
+</html>
